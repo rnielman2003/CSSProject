@@ -1,171 +1,271 @@
+
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation</title>
+    <title>Design Company</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
+
   <body>
-    <div class="row">
-      <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="panel">
-          <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-          <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-          <p>Once you've exhausted the fun in this document, you should check out:</p>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 medium-push-2 columns">
-              <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-            </div>
-            <div class="large-4 medium-4 medium-pull-2 columns">
-              <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-            </div>        
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
-
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="callout panel">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-            </div>
-          </div>
+    <header>
+      <div class="row">
+        <div class="medium-6 columns">
+          <a href="#"><img src="images/logo.png" id="logo" /></a>
         </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
+        <div class="medium-6 columns">
+          <form action="#">
+          
+          <div class="form-wrapper">
+          <dl id="sample" class="dropdown">
+        <dt><a href="#"><span>Choose</span></a></dt>
+        <dd>
+            <ul>
+                <li><a href="#">Portfolio<span class="value">Portfolio</span></a></li>
+                <li><a href="#">Blog<span class="value">Blog</span></a></li>
+            </ul>
+        </dd>
         
-        <hr />
-                
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <div class="row collapse">
-                <label>Input Label</label>
-                <div class="small-9 columns">
-                  <input type="text" placeholder="small-9.columns" />
-                </div>
-                <div class="small-3 columns">
-                  <span class="postfix">.com</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Select Box</label>
-              <select>
-                <option value="husker">Husker</option>
-                <option value="starbuck">Starbuck</option>
-                <option value="hotdog">Hot Dog</option>
-                <option value="apollo">Apollo</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-6 medium-6 columns">
-              <label>Choose Your Favorite</label>
-              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-            </div>
-            <div class="large-6 medium-6 columns">
-              <label>Check these out</label>
-              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Textarea Label</label>
-              <textarea placeholder="small-12.columns"></textarea>
-            </div>
-          </div>
-        </form>
-      </div>     
-
-      <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="small button">Simple Button</a><br/>
-        <a href="#" class="small radius button">Radius Button</a><br/>
-        <a href="#" class="small round button">Round Button</a><br/>            
-        <a href="#" class="medium success button">Success Btn</a><br/>
-        <a href="#" class="medium alert button">Alert Btn</a><br/>
-        <a href="#" class="medium secondary button">Secondary Btn</a></p>           
-        <div class="panel">
-          <h5>So many components, girl!</h5>
-          <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-          <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>          
+    </dl>
+    <input type="text" class="searchbox" id="srch" placeholder="Search in portfolio" />
+    
+       </div>
+       <button class="go">GO</button>
+       </form>
         </div>
       </div>
-    </div>
+      <div class="headerback">
+      <div class="row">
+          <div class="medium-12 medium-centered columns">
+          <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li class="active"><a href="#">Portofolio</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
 
+      <div class="row">
+          <div class="medium-12 medium-centered columns">
+          <nav class="secondarynav">
+            <ul>
+              <li><a href="#">Branding</a></li>
+              <li class="active"><a href="#">Printing</a></li>
+              <li><a href="#">Illustrations</a></li>
+              <li><a href="#">Packaging</a></li>
+              <li><a href="#">Video</a></li>
+              <li><a href="#">Compaigns</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      </div>
+    </header>
+
+    <section id="slideshow">
+      <div class="row">
+       
+      <ul class="example-orbit" data-orbit data-options="timer:true; 
+timer_speed:5000;
+pause_on_hover:false;">
+        <li>
+          <img src="images/Slide1.png" alt="slide 1" />
+        </li>
+        <li>
+          <img src="images/Slide2.png" alt="slide 2" />
+        </li>
+        <li>
+          <img src="images/Slide3.png" alt="slide 3" />
+        </li>
+        <li>
+          <img src="images/Slide4.png" alt="slide 4" />
+        </li>
+     </ul>
+      </div>
+  </section>
+<section class="content">
+    <div class="row">
+  <div class="medium-3 medium-centered columns"><h2>About Us</h2></div>
+</div>
+
+<div class="row">
+  <div class="medium-4 columns"><p>FOX ordered a second season for "Sleepy Hollow" early in the fall, while NBC did the same for "The Blacklist" just a couple months later. FOX ordered two seasons of "Glee" last spring, a deal it may be regretting as "Glee" ratings find new ways to crater each week.
+
+But when it comes to looking forward, those three renewals all look like child's play.</p></div>
+  <div class="medium-4 columns"><p>But when it comes to looking forward, those three renewals all look like child's play compared to what CBS did for "The Big Bang Theory" on Tuesday (March 12).
+
+CBS has announced that "The Big Bang Theory" has been renewed for three additional years, carrying the Thursday comedy through the 2016-2017 season. The deal will carry "The</p></div>
+  <div class="medium-4 columns"><p>deal will carry "The Big Bang Theory," currently in its seventh season, through season 10.
+
+"Comedy is a big part of our schedule, and 'The Big Bang Theory' is the biggest comedy force on television," blurbs Nina Tassler, Chairman, CBS Entertainment. "This multi-year deal further strengthens our network’s position for future seasons and marks another</p></div>
+</div>
+</section>
+
+<section class="content">
+    <div class="row">
+  <div class="medium-12 medium-centered columns">
+    <h2 class="services">Services We Provide</h2>
+    <p class="centered">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. <br />
+Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+</p>
+    </div>
+</div>
+</section>
+
+<section id="slideshowtwo">
+      <div class="row">
+       
+  <ul class="example-orbit" data-orbit data-options="timer:true; 
+timer_speed:5000;
+pause_on_hover:false;bullets:false;">
+  <li>
+    <div class="wrapperslide first">
+    <img src="images/george.jpg" width="180" height="180" />
+    <h3>Branding</h3>
+    <p>The word "brand" is often used as a metonym referring to the company that is strongly identified with a </p>
+    </div>
+    <div class="wrapperslide">
+    <img src="images/george.jpg" width="180" height="180" />
+    <h3>Design</h3>
+    <p>A roadmap or a strategic approach for someone to achieve a unique expectation.</p>
+    </div>
+    <div class="wrapperslide last">
+    <img src="images/george.jpg" width="180" height="180" />
+    <h3>Development</h3>
+    <p>Artificial development is often considered a sub-field of evolutionary computation.</p>
+    </div>
+  </li>
+  <li>
+   <div class="wrapperslide first">
+    <img src="images/george.jpg" width="180" height="180" />
+    <h3>Branding</h3>
+    <p>The word "brand" is often used as a metonym referring to the company that is strongly identified with a </p>
+    </div>
+    <div class="wrapperslide">
+    <img src="images/george.jpg" width="180" height="180" />
+    <h3>Design</h3>
+    <p>A roadmap or a strategic approach for someone to achieve a unique expectation.</p>
+    </div>
+    <div class="wrapperslide last">
+    <img src="images/george.jpg" width="180" height="180" />
+    <h3>Development</h3>
+    <p>Artificial development is often considered a sub-field of evolutionary computation.</p>
+    </div>
+  </li>
+</ul>
+      </div>
+</section>
+
+<section class="content">
+    <div class="row">
+  <div class="medium-3 medium-centered columns"><h2>Get in touch</h2></div>
+</div>
+</div>
+
+<section class="contact">
+  <div class = "row">
+    <div class="medium-6 columns">
+      <div class="radiowrapper">
+      <input type="radio" id="mrs" name="salutation" value="Mrs"><label for="mrs">Mrs</label> &nbsp;
+      <input type="radio" id="ms" name="salutation" value="Ms"><label for="ms">Ms</label> &nbsp;
+      <input type="radio" id="mr" name="salutation" value="Mr"><label for="mr">Mr</label> &nbsp;
+      </div>
+      <input type="text" placeholder="Your Name" />
+      <input type="text" placeholder="Your Email" />
+      <textarea type="text" placeholder="Your Message" rows="6"></textarea>
+      <br />
+      <div class="checkwrapper">
+      <input type="checkbox" id="terms" name="terms" value="agree"><label for="terms">agree with terms</label>
+      </div>
+      <button class="send">Send</button>
+
+    </div>
+    <div class="medium-6 columns">
+      <p class="stronger">Where you can find us</p>
+      <p>1600 Pennsylvania NW, Washington, DC 20500,<br /> 
+United States of America. 
+</p>
+<p>
+T: (202) 456-1111
+M: (202) 456-1212</p>
+
+      <div id="map_div" style="height: 220px;width:420px"></div>
+  <br />
+  <a href="#" class="facebook"></a>
+  <a href="#" class="twitter"></a>
+  <a href="#" class="youtube"></a>
+  <a href="#" class="linkedin"></a>
+
+  </div>
+  </div>
+</section>
+
+<footer>
+  <div class = "row">
+    <div class="medium-6 columns"><p class="w">© 2014. All rights reserved.</p></div>
+    <div class="medium-6 columns"><p class="w"><a href="#">Admin panel </a>&nbsp;<img src="images/admin-panel.png" alt="admin" width="16" height="16"></p></div>
+  
+  </div>
+</footer>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.2.2/masonry.pkgd.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3&amp;sensor=false"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".dropdown dt a").click(function() {
+                $(".dropdown dd ul").toggle();
+            });                      
+            $(".dropdown dd ul li a").click(function() {
+              
+                var text = $(this).html();
+                if (text === 'Blog<span class="value">Blog</span>') {
+                    $("#srch").removeClass('portfolio')
+                    $("#srch").addClass('blog');
+                } 
+                if (text === 'Portfolio<span class="value">Portfolio</span>') {
+                    $("#srch").removeClass('blog')
+                    $("#srch").addClass('portfolio');
+                }
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+            });                      
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+            var map;
+            google.maps.event.addDomListener(window, "load", function () {
+              var map = new google.maps.Map(document.getElementById("map_div"), {
+                center: new google.maps.LatLng(33.808678, -117.918921),
+                zoom: 14,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+              });
+              var infoWindow = new google.maps.InfoWindow();
+              function createMarker(options, html) {
+                var marker = new google.maps.Marker(options);
+                if (html) {
+                  google.maps.event.addListener(marker, "click", function () {
+                    infoWindow.setContent(html);
+                    infoWindow.open(options.map, this);
+                  });
+                }
+                return marker;
+              }
+            });
+        });
+    </script>
   </body>
 </html>
